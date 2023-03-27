@@ -1,3 +1,7 @@
+#dataframes
+clean_df_test*
+clean_df_train*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
