@@ -7,6 +7,7 @@ Our project utilizes a combination of three powerful machine learning models - L
 - [Data](#data)
 - [Logistic Regression - Baseline](#logisticregression-baseline)
 - [Recurent Neural Network](#recurentneuralnetwork)
+- [BERT](#bert)
 
 
 ## Data
@@ -26,4 +27,11 @@ As before we Tokenize and do some common pre-processing steps. However, to fit a
 
 RNNs process sequential data using feedback connections to maintain information from previous time steps. They're ideal for language modeling, speech recognition, and time series prediction. At each step, RNNs produce an output and hidden state, which becomes an additional input for the next step. By updating the hidden state based on current and previous inputs, RNNs capture long-term dependencies and generate contextually relevant outputs.
 
-Our RNN out performs the Baseline model with an accuracy and F1 score of 98.5% percet. Especially the *Plant* and *Village* classes are predicted excepionally well with a near perfect accuarcy and 
+Our RNN out performs the Baseline model with an accuracy and F1 score of 98.5% percet. Especially the *Plant* and *Village* classes are predicted excepionally well with a near perfect accuarcy and F1 score.
+
+
+## BERT
+BERT is a neural network architecture that can be fine-tuned for a wide range of NLP tasks, especially text classification. It is based on the transformer architecture and uses a bidirectional approach to pre-train contextualized word embeddings. This allows BERT to better understand the nuances of language and perform well on various NLP tasks without the need for extensive task-specific training.
+
+
+
