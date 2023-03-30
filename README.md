@@ -39,7 +39,10 @@ Our BERT model slightly outperform the RNN and has a perfect recall score. Moreo
 
 ## Understanding Models & Biases
 A way to understand our respective models (and perhaps biases) is LIME. LIME uses an example to demonstrate how the pretrained model makes it's descion. Take the **Baseline Model** as an example:
-![Screenshot](screenshot.png)
+
+<img width="407" alt="LIME" src="https://user-images.githubusercontent.com/114157156/228962617-a1fcaa6d-af75-4c3d-a155-7550916917ea.png">
+
+We fed an arbirary row from the training data set and based on the words in the article we can see weights that justify the classification.
 
 
 
