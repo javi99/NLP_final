@@ -8,6 +8,7 @@ Our project utilizes a combination of three powerful machine learning models - L
 - [Logistic Regression - Baseline](#logisticregression-baseline)
 - [Recurent Neural Network](#recurentneuralnetwork)
 - [BERT](#bert)
+- [Understanding Models & Biases](#understandingmodels&biases)
 
 
 ## Data
@@ -31,7 +32,14 @@ Our RNN out performs the Baseline model with an accuracy and F1 score of 98.5% p
 
 
 ## BERT
-BERT is a neural network architecture that can be fine-tuned for a wide range of NLP tasks, especially text classification. It is based on the transformer architecture and uses a bidirectional approach to pre-train contextualized word embeddings. This allows BERT to better understand the nuances of language and perform well on various NLP tasks without the need for extensive task-specific training.
+BERT is a neural network architecture that can be fine-tuned for a wide range of NLP tasks, especially text classification. It is based on the transformer architecture and uses a bidirectional approach to pre-train contextualized word embeddings. This allows BERT to better understand the nuances of language and perform well on various NLP tasks without the need for extensive task-specific training. Data must be tokenized into subword units which are a combination of full words and subwords. Fine-tuning BERT on a labeled text classification dataset involves updating the pre-trained model's weights based on the labeled data. During training, the labeled data is fed into the model, and the model adjusts its weights to minimize the difference between its predicted outputs and the correct labels. Once the model is trained on the labeled data, it can be used to classify new, unlabeled text by feeding it into the fine-tuned BERT model.
+
+Our BERT model slightly outperform the RNN and has a perfect recall score. Moreover, as the batches are fed we make sure to give it similar numbers of each class. We thus ensure to mitigate class imbalances before they even arise.
+
+
+## Understanding Models & Biases
+A way to understand our respective models (and perhaps biases) is LIME. LIME uses an example to demonstrate how the pretrained model makes it's descion. Take the **Baseline Model** as an example:
+![Screenshot](screenshot.png)
 
 
 
