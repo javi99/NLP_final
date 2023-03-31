@@ -16,6 +16,9 @@ Use a dataset from huggingface.com called DBPedia which contains the title and b
 
 In our first step we clean the dataset which means eliminating all articles with non English articles. This reduced the data set by a third, but also creates some class imabalances. Second, we restrict the number of words per artible to the first 80 to ensure the dimensions fit later on the modelling stage. The next steps depend on the model and will be discussed in detail in the according section.
 
+All of the data used in this project can be found in the following drive folder: 
+
+https://drive.google.com/drive/folders/11QEwvGNlvk5qTagKzytbQl2_JuZEZbgP?usp=share_link
 
 ## Logistic Regression - Baseline
 As a second preprocessing stage we to *sklearn's* CountVectoriser. The CountVectorizer is a tool used for feature extraction that converts (tokensization) the text data into a matrix of word counts. The Logistic Regression model is then applied to this matrix to classify the text into different categories based on the features (word frequency in topics) extracted.
