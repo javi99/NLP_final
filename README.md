@@ -20,6 +20,8 @@ All of the data used in this project can be found in the following drive folder:
 
 https://drive.google.com/drive/folders/11QEwvGNlvk5qTagKzytbQl2_JuZEZbgP?usp=share_link
 
+/data should be in the same directory as *nlp_final.ipynb*
+
 ## Logistic Regression - Baseline
 As a second preprocessing stage we to *sklearn's* CountVectoriser. The CountVectorizer is a tool used for feature extraction that converts (tokensization) the text data into a matrix of word counts. The Logistic Regression model is then applied to this matrix to classify the text into different categories based on the features (word frequency in topics) extracted.
 
