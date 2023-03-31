@@ -3,6 +3,7 @@ clean_df_test*
 clean_df_train*
 finetuned*
 *.csv
+*.npy
 .DS_Store
 
 /data
