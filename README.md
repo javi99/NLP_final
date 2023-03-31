@@ -50,5 +50,9 @@ We fed an arbirary row from the training data set and based on the words in the 
 ### Biases
 To test for potential biases we fed words and sentences that might have historically been cononated with sterio types. For example the sentence: *He is black pakistani european* shows a clear gender bias:
 
+<img width="687" alt="genderbias" src="https://user-images.githubusercontent.com/114157156/229081214-20d044af-4ee6-4569-87df-f5ee5daaaed5.png">
+
+He word *he* and therefore masculinity is associated poltical office. We then looked at all *Public Office*-labeld training data points and extracted the first names. Using a name data base and the Naive Bayesian Classifier we found that there are more male office holder (57%), however, we believe that this number is under estimated. We therefore conclude that the bias stemms from the data rather than the model. 
+
 
 
