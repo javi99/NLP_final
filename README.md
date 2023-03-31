@@ -42,7 +42,13 @@ A way to understand our respective models (and perhaps biases) is LIME. LIME use
 
 <img width="407" alt="LIME" src="https://user-images.githubusercontent.com/114157156/228962617-a1fcaa6d-af75-4c3d-a155-7550916917ea.png">
 
-We fed an arbirary row from the training data set and based on the words in the article we can see weights that justify the classification.
+We fed an arbirary row from the training data set and based on the words in the article we can see weights that justify the classification. Unsurprisingly, the word album is the best predictor for the topic *Album*.
+
+
+
+
+### Biases
+To test for potential biases we fed words and sentences that might have historically been cononated with sterio types. For example the sentence: *He is black pakistani european* shows a clear gender bias:
 
 
 
